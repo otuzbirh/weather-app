@@ -45,34 +45,6 @@ Simple and easy-to-use API.
 Automatic JSON data transformation.
 Intercepting requests and responses for better control.
 
-Project Structure
-
-.
-├── public
-│ └── index.html
-├── src
-│ ├── api
-│ │ ├── api.js
-│ │ └── index.js
-│ ├── components
-│ │ ├── CurrentWeather
-│ │ │ ├── CurrentWeather.module.scss
-│ │ │ └── index.js
-│ │ ├── CurrentWeatherDescription
-│ │ │ ├── CurrentWeatherDescription.module.scss
-│ │ │ └── index.js
-│ │ ├── Forecast
-│ │ │ ├── Forecast.module.scss
-│ │ │ └── index.js
-│ │ └── Search
-│ │ ├── Search.module.scss
-│ │ └── index.js
-│ ├── hooks
-│ │ └── useWeatherData.js
-│ ├── App.js
-│ ├── index.js
-│ └── index.css
-└── .env
 Environment Variables
 REACT_APP_RAPID_API_KEY: Your Rapid API key for accessing the GeoDB Cities API.
 Key Components
@@ -94,8 +66,10 @@ Endpoint: https://wft-geo-db.p.rapidapi.com/v1/geo/cities
 Open Meteo API
 Used for fetching current weather and forecast data.
 Endpoints:
-Current Weather: https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true
-Forecast: https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=auto
+Current Weather:
+https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true
+Forecast:
+https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=auto
 Troubleshooting
 Environment Variable Issues:
 
